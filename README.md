@@ -46,7 +46,7 @@ Using SAP? Remember to add vendors beforehand before you issue any Purchase Orde
 
 # Recording
 
-* use YouTube as most feature-ruch platform world-wide
+* use YouTube as most feature-rich platform world-wide
   * subtitles 
   * live chat
   * playlists
