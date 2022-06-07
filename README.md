@@ -92,6 +92,10 @@ sound availability, file format etc.  and how to deliver it to organizers.
 Using SAP? 
 Remember to add vendors beforehand before you issue any Purchase Order.
 
+### Journalist
+
+* ask or hire somebody to photograp the event, give this person some time to prepare  
+
 ### Breaks
 
 ### Food & Drinks 
