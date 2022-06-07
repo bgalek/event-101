@@ -56,6 +56,10 @@ Using SAP? Remember to add vendors beforehand before you issue any Purchase Orde
 
 # Software
 
+* Turn off notifications
+* If possible, try to run your presentation offline
+* The font is never big enough, make it bigger
+
 # Room
 
 * red dot / tape for speaker to know where to stand
