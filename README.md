@@ -39,6 +39,11 @@ especialy important when inviting guests for keynotes or talks
 
 * use slack/teams/discord reminders for people involved
 
+### Guests
+
+Remember to ensure that keynote speakers or special guests will be arriving onsite (if you have hybrid event)
+it's not motivating when most important ones miss the oprutunity to see whole event and i.e. just call-in to kickstart it.
+
 ### Webpage
 > use github and gh-pages for fast-start start
 
