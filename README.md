@@ -1,5 +1,6 @@
 
 # Event 101
+Purpose of this document is to provide useful tips for creating offline/hybryd events for bigger audience in Allegro.
 
 ## For organizers
 
