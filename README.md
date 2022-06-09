@@ -73,9 +73,9 @@ it's not motivating when most important ones miss the oprutunity to see whole ev
 * ensure stable network connection
 	* if wireless - it's a good idea to have 2 of them (for speakers and audiences)
 * red dot / tape the floor for speaker to know where to stand
-* prepare a feedback screen for spekaer to see notes/slides
+* prepare a feedback screen for speaker to see notes/slides
 	* or at least prepare a clock for speakers to see
-* prepare phiscial hints to show from first row
+* prepare phisical hints to show from first row
   * "repeat the question"
   * "you have 5 min left" (if no clock)
   * "speak to the microphone"
@@ -89,7 +89,7 @@ it's not motivating when most important ones miss the oprutunity to see whole ev
 
 ### Slides rules
 
-Please provide informations to spekaers about slides format i.e. resolution, color scheme, 
+Please provide informations to speakers about slides format i.e. resolution, color scheme, 
 sound availability, file format etc.  and how to deliver it to organizers.
 
 ### Procurement
@@ -99,9 +99,21 @@ Remember to add vendors beforehand before you issue any Purchase Order.
 
 ### Journalist
 
-* ask or hire somebody to photograp the event, give this person some time to prepare  
+* ask or hire somebody to photograp the event, give this person some time to prepare
+* notes, photos and movies from the event are good material for your event history webpage
 
 ### Breaks
+Remember that your audience needs regular breaks - they will be tired and won't be able to focus on presentations even after 90 minutes of continuous active listening.
+The break will also be useful for people actively working at the event.
+
+Short breaks
+Provide at least 10 min breaks, so that everyone has time for drink and go to the bathroom.
+If your event is held in more than one room, attendees must also have time space to move to the room that interests them.
+
+Long breaks
+Provide at least one long break during the day that can be used for lunch and rest.
+
+If possible, provide participants with the option of going outside to fresh air during breaks.
 
 ### Food & Drinks 
 
