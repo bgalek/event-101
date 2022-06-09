@@ -1,5 +1,7 @@
 
 # Event 101
+Purpose of this document is to provide useful tips for creating offline/hybryd events for bigger audience.
+It can work as a checklist when preparing your own event too!
 
 ## For organizers
 
