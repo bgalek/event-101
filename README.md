@@ -72,6 +72,9 @@ it's not motivating when most important ones miss the oprutunity to see whole ev
 
 ### Venue
 
+The venue of the event should be large enough to be held in comfortable conditions for everyone. This means that you have to match your requirements, the size of the place and the number of participants.
+
+Stage:
 * ensure stable network connection
 	* if wireless - it's a good idea to have 2 of them (for speakers and audiences)
 * red dot / tape the floor for speaker to know where to stand
@@ -82,6 +85,21 @@ it's not motivating when most important ones miss the oprutunity to see whole ev
   * "you have 5 min left" (if no clock)
   * "speak to the microphone"
  * invite all speakers to seat in the first row
+* prepare microphones for speakers, announcers and audience (so they can ask questions and announcer doesn't have to make too much jogging)
+
+Provide participants with information about the place (communication): 
+* where it is
+* from what time you can come
+* where is the entrance
+* how can you tell if this is our event (e.g. directions with event logo)
+* how can you get to the place (e.g. by bus, how to get from the trian station, is there a car park (if not, it is also worth mentioning))
+
+Provide on site:
+* place appropriate signs and directions in key locations (e.g. toilet access, specific room, registration; maps are welcome)
+* take care of graphic consistency - all signs and additional information should be identifiable with the event, i.e. be in the same color convention and / or contain the event logo (especially important if more than one event is organized in a given building)
+* if possible, provide the option for participants to go outside to fresh air during breaks
+* if necessary, provide a suitable place for people working at the event and / or for speakers to prepare, take a break or freely discuss further activities
+* if possible, provide a place and / or people to whom participants can contact with questions and problems related to the event
 
 ### Hardware
 
@@ -108,12 +126,12 @@ Remember to add vendors beforehand before you issue any Purchase Order.
 Remember that your audience needs regular breaks - they will be tired and won't be able to focus on presentations even after 90 minutes of continuous active listening.
 The break will also be useful for people actively working at the event.
 
-Short breaks
-Provide at least 10 min breaks, so that everyone has time for drink and go to the bathroom.
-If your event is held in more than one room, attendees must also have time space to move to the room that interests them.
+Short breaks:
+* Provide at least 10 min breaks, so that everyone has time for drink and go to the bathroom.
+* If your event is held in more than one room, attendees must also have time space to move to the room that interests them.
 
-Long breaks
-Provide at least one long break during the day that can be used for lunch and rest.
+Long breaks:
+* Provide at least one long break during the day that can be used for lunch and rest.
 
 If possible, provide participants with the option of going outside to fresh air during breaks.
 
