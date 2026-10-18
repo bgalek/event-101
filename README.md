@@ -1,150 +1,157 @@
 
 # Event 101
-Purpose of this document is to provide useful tips for creating offline/hybryd events for bigger audience.
-It can work as a checklist when preparing your own event too!
+The purpose of this document is to provide useful tips for organizing offline and hybrid events for larger audiences.
+It can also serve as a checklist when preparing your own event!
 
 ## For organizers
 
 ### Time
 
-Please be aware that not everybody lives in the same time zone, 
-especialy important when inviting guests for keynotes or talks
+Please remember that not everyone lives in the same time zone.
+This is especially important when inviting guests to give keynotes or talks.
 
 ### Communication
 
-* as soon as you know the date of the event - announce it!
+* as soon as you know the date of the event, announce it!
   * use email aliases targeting your audience
-   	> When sending emails remember to provide proper json+ld schema! 
-	> This will ensure your email won't get missed so easily and can be used by AI and calendar solutions.
+	> When sending emails, remember to include the proper JSON-LD schema!
+	> This will help your email get noticed and make it usable by AI and calendar tools.
 	> Check out [https://schema.org/Event](https://schema.org/Event) for examples!
 	> 
-	> Reuse the same email subject to ease finding missed emails for your audiance.
-	> Remember to send emails using BCC for privacy!
+	> Reuse the same email subject to make it easier for your audience to find emails they've missed.
+	> Remember to use BCC when sending emails to protect recipients' privacy!
   * use public chat channels targeting your audience
-  * use social media if appliable
+  * use social media if applicable
 
-* create slack/teams/discord channels for speakers, attendees and organizers
+* create Slack/Teams/Discord channels for speakers, attendees, and organizers
   * \#event-speakers (private, only for speakers)
-  * \#event-organizers (private, only people that are involed)
+  * \#event-organizers (private, only for people who are involved)
   * \#event or #event-YEAR (public)
 
-* create calendar entries for attendants
+* create calendar entries for attendees
 	* with agenda
 	* with all necessary links
 
 * create calendar entries for organizers
-	* to talk about orgniazing stuff periodically
+	* to discuss organizational matters regularly
 
-* create calendar entries for spakers and organizers
-	 * at least one chance to meet and talk about speakers requirements
-	 * schedule an online rehearsal if required
+* create calendar entries for speakers and organizers
+	 * at least one opportunity to meet and discuss the speakers' requirements
+	 * schedule an online rehearsal if needed
 
-* use slack/teams/discord reminders for people involved
+* send speakers and organizers reminders in Slack/Teams/Discord
 
 ### Guests
 
-Remember to ensure that keynote speakers or special guests will be arriving onsite (if you have hybrid event)
-it's not motivating when most important ones miss the oprutunity to see whole event and i.e. just call-in to kickstart it.
+If you're holding a hybrid event, make sure keynote speakers and special guests will be there in person.
+It's discouraging when your most important guests miss the opportunity to experience the whole event and only call in to kick it off.
 
 ### Webpage
-> use github and gh-pages for fast-start start
+> Use GitHub Pages for a quick start.
 
-* create a domain (event.comapny.io / event.io) for event if not yet created
-* under the domain create a webpage with most importat informations:
+* create a domain (event.company.io / event.io) for the event, if one doesn't already exist
+* create a webpage at that domain with the most important information:
   * agenda
   * venue
   * registration (if possible)
   * video streams (if possible)
- * preserve event history, provide folders for each year 
-    for people to explore in the future (event.company.io/2022; event.company.io/2023)
+ * preserve the event's history by providing a folder for each year
+    so people can explore it in the future (event.company.io/2022; event.company.io/2023)
 
 ### Recording
 
-* hire a recording company to have your event recorder by professionals
-* use YouTube as most feature-rich platform world-wide
+* hire a recording company to have your event professionally recorded
+* use YouTube as one of the most feature-rich platforms worldwide
   * subtitles 
   * live chat
   * playlists
-  * ability to easily cast stream on screens
-  * playback (for for the late)
-  * ability to have private playlists accessible for whole organization
-* use stream studio software like OBS or StreamYard
+  * ability to easily cast streams to screens
+  * playback for people watching later
+  * ability to create private playlists accessible to the whole organization
+* use streaming studio software like OBS or StreamYard
 
 ### Venue
 
-The venue of the event should be large enough to be held in comfortable conditions for everyone. This means that you have to match your requirements, the size of the place and the number of participants.
+The venue should be large enough to accommodate everyone comfortably. Choose a place that meets your requirements and suits the expected number of participants.
 
 Stage:
-* ensure stable network connection
-	* if wireless - it's a good idea to have 2 of them (for speakers and audiences)
-* red dot / tape the floor for speaker to know where to stand
-* prepare a feedback screen for speaker to see notes/slides
-	* or at least prepare a clock for speakers to see
-* prepare phisical hints to show from first row
+* ensure a stable network connection
+	* if using Wi-Fi, it's a good idea to have two networks (one for speakers and one for the audience)
+* mark the floor with a red dot or tape so speakers know where to stand
+* prepare a monitor for speakers to see their notes and slides
+	* or at least provide a clock they can see
+* prepare physical cues that people in the first row can hold up
+  * "5 minutes left"
+  * "speak louder"
   * "repeat the question"
-  * "you have 5 min left" (if no clock)
-  * "speak to the microphone"
- * invite all speakers to seat in the first row
-* prepare microphones for speakers, announcers and audience (so they can ask questions and announcer doesn't have to make too much jogging)
+  * "speak into the microphone"
+  * "halfway through"
+  * "no time for audience questions"
+* download and print the [English](organizer-cue-cards.en.html) or [Polish](organizer-cue-cards.pl.html) cue cards
+ * invite all speakers to sit in the first row
+* provide microphones for speakers, hosts, and audience members (so people can ask questions without the host having to run around)
 
-Provide participants with information about the place (communication): 
+Add cue card text to `_data/organizer-cue-cards.yml` and set `size: long` for longer messages. To add a language, add its translations there and create a Markdown page with `layout: organizer-cue-cards` and the matching `language` value.
+
+Share the following venue information with participants:
 * where it is
-* from what time you can come
-* where is the entrance
-* how can you tell if this is our event (e.g. directions with event logo)
-* how can you get to the place (e.g. by bus, how to get from the trian station, is there a car park (if not, it is also worth mentioning))
+* what time you can arrive
+* where the entrance is
+* how to recognize the event (e.g. signs with the event logo)
+* how to get there (e.g. by bus, how to get from the train station, and whether parking is available; if not, mention that too)
 
-Provide on site:
-* place appropriate signs and directions in key locations (e.g. toilet access, specific room, registration; maps are welcome)
-* take care of graphic consistency - all signs and additional information should be identifiable with the event, i.e. be in the same color convention and / or contain the event logo (especially important if more than one event is organized in a given building)
-* if possible, provide the option for participants to go outside to fresh air during breaks
-* if necessary, provide a suitable place for people working at the event and / or for speakers to prepare, take a break or freely discuss further activities
-* if possible, provide a place and / or people to whom participants can contact with questions and problems related to the event
+On site:
+* place signs and directions in key locations (e.g. to the restrooms, specific rooms, and registration; maps are welcome)
+* keep the design consistent: all signs and other information should be identifiable with the event, e.g. by using the same color scheme and/or including the event logo (especially important if more than one event is held in the same building)
+* if possible, give participants the option to go outside for some fresh air during breaks
+* if necessary, provide a suitable place for event staff and/or speakers to prepare, take a break, or discuss further activities
+* if possible, provide a place or a contact person for participants with questions or problems related to the event
 
 ### Hardware
 
-* provide a slider/clicker
-* have additional cables and converters, spare batteries and extension cords
+* provide a slide advancer/clicker
+* have extra cables and adapters, spare batteries, and extension cords
 * set up microphones and test sound before the event
 
-### Slides rules
+### Slide guidelines
 
-Please provide information to speakers about slide format i.e. resolution, color scheme, 
-sound availability, file format etc. and how to deliver it to organizers.
+Please tell speakers about the slide requirements, e.g. resolution, color scheme,
+audio availability, file format, etc., and how to send their slides to the organizers.
+If a presentation includes company announcements or other public-facing messages, ask the PR team to review it before the event.
+Ask speakers to send a PDF copy in advance; if possible, download it and keep it available offline as a fallback.
 
 ### Procurement
 
-Using SAP? 
-Remember to add vendors before you issue any Purchase Order.
+Using SAP?
+Remember to add vendors before you issue any purchase order.
 
-### Journalist
+### Photography
 
-* ask or hire somebody to photograph the event; give this person some time to prepare
-* notes, photos and movies from the event are good material for your event history webpage
+* ask or hire someone to photograph the event; give them some time to prepare
+* notes, photos, and videos from the event are good material for its history webpage
 
 ### Breaks
-Remember that your audience needs regular breaks - they will be tired and won't be able to focus on presentations even after 90 minutes of continuous active listening.
-The break will also be useful for people actively working at the event.
+Remember that your audience needs regular breaks. People get tired and can't focus on presentations after 90 minutes of continuous listening.
+Breaks are also useful for people working at the event.
 
 Short breaks:
-* Provide at least 10 min breaks, so that everyone has time to drink and go to the bathroom.
-* If your event is held in more than one room, attendees must also have time and space to move to the room that interests them.
+* Provide breaks of at least 10 minutes so everyone has time to get a drink and use the restroom.
+* If your event is held in more than one room, attendees also need time and space to move to the room they're interested in.
 
 Long breaks:
 * Provide at least one long break during the day that can be used for lunch and rest.
 
-If possible, provide participants with the option of going outside to fresh air during breaks.
+If possible, give participants the option to go outside for some fresh air during breaks.
 
 ### Food & Drinks 
-* Provide at least drinking water.
-* If you want to serve alcoholic beverages, check this with venue owners.
+* Provide drinking water at a minimum.
+* If you want to serve alcoholic beverages, check with the venue owners.
 
 ### Registration
-* Send a reminder before the event; prepare a backup check-in method.
+* Send attendees a reminder with the venue address, entrance details, and arrival instructions.
+* Prepare a backup check-in method in case the registration system is unavailable.
 
-### Attendances
-
-# For speakers
+## For speakers
 
 ## Software
 

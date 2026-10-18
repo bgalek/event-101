@@ -1,0 +1,20 @@
+en:
+  title: Organizer cue cards
+  cards:
+    - text: 5 minutes left
+    - text: Speak louder
+    - text: Please repeat the question
+    - text: Speak into the microphone
+    - text: Halfway through
+    - text: No time for questions from the audience
+      size: long
+pl:
+  title: Kartki dla organizatorów
+  cards:
+    - text: Zostało 5 minut
+    - text: Mów głośniej
+    - text: Powtórz pytanie
+    - text: Mów do mikrofonu
+    - text: Połowa czasu
+    - text: Nie ma czasu na pytania z sali
+      size: long

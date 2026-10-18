@@ -1,0 +1,94 @@
+---
+layout: default
+---
+<style>
+.cue-cards {
+  color: #172c3d;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.cue-cards__sheet {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  max-width: 1100px;
+  margin: 24px auto;
+}
+
+.cue-cards__card {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  min-height: 190px;
+  padding: 24px 28px;
+  border: 2px solid #172c3d;
+  border-left: 12px solid #e45b35;
+  background: #fff;
+  font-size: clamp(24px, 4vw, 42px);
+  font-weight: 800;
+  line-height: 1.08;
+  text-wrap: balance;
+  overflow-wrap: anywhere;
+  break-inside: avoid;
+}
+
+.cue-cards__card--long {
+  font-size: clamp(22px, 3.3vw, 34px);
+}
+
+@media (max-width: 600px) {
+  .cue-cards__sheet {
+    grid-template-columns: 1fr;
+  }
+}
+
+@page {
+  size: A4 landscape;
+  margin: 10mm;
+}
+
+@media print {
+  #header_wrap,
+  #footer_wrap {
+    display: none;
+  }
+
+  #main_content_wrap .inner {
+    max-width: none;
+    padding: 0;
+  }
+
+  .cue-cards__sheet {
+    width: 277mm;
+    height: 190mm;
+    max-width: none;
+    grid-template-rows: repeat(3, minmax(0, 1fr));
+    gap: 5mm;
+    margin: 0;
+    print-color-adjust: exact;
+    -webkit-print-color-adjust: exact;
+  }
+
+  .cue-cards__card {
+    min-height: 0;
+    padding: 7mm;
+    font-size: 27pt;
+  }
+
+  .cue-cards__card--long {
+    font-size: 22pt;
+  }
+}
+</style>
+
+{% assign cue_card_data = site.data['organizer-cue-cards'] %}
+<main class="cue-cards" aria-label="{{ cue_card_data[page.language].title | escape }}">
+  <div class="cue-cards__sheet">
+    {% assign language_cards = cue_card_data[page.language].cards %}
+    {% for card in language_cards %}
+      <section class="cue-cards__card{% if card.size == 'long' %} cue-cards__card--long{% endif %}">
+        {{ card.text | escape }}
+      </section>
+    {% endfor %}
+  </div>
+</main>
