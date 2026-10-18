@@ -2,93 +2,165 @@
 layout: default
 ---
 <style>
+html,
+body {
+  margin: 0;
+}
+
+{% if page.card %}
+body {
+  height: 100vh;
+}
+{% endif %}
+
+.container-lg {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  padding: 0;
+}
+
+.container-lg > h1 {
+  display: none;
+}
+
+#header_wrap,
+.page-header,
+#footer_wrap {
+  display: none;
+}
+
+#main_content_wrap,
+.main-content,
+#main_content_wrap .inner {
+  max-width: none;
+  padding: 0;
+}
+
 .cue-cards {
   color: #172c3d;
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.cue-cards__sheet {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 12px;
-  max-width: 1100px;
-  margin: 24px auto;
+.cue-cards--overview {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 24px;
 }
 
-.cue-cards__card {
+.cue-cards__link:focus-visible {
+  outline: 4px solid #e45b35;
+  outline-offset: 3px;
+}
+
+.cue-cards__list {
+  display: grid;
+  gap: 12px;
+  padding: 0;
+  list-style: none;
+}
+
+.cue-cards__link {
   box-sizing: border-box;
   display: flex;
   align-items: center;
-  min-height: 190px;
-  padding: 24px 28px;
+  min-height: 72px;
+  padding: 16px 20px;
   border: 2px solid #172c3d;
   border-left: 12px solid #e45b35;
   background: #fff;
-  font-size: clamp(24px, 4vw, 42px);
+  color: inherit;
+  font-size: clamp(20px, 3vw, 30px);
   font-weight: 800;
   line-height: 1.08;
   text-wrap: balance;
   overflow-wrap: anywhere;
-  break-inside: avoid;
 }
 
-.cue-cards__card--long {
-  font-size: clamp(22px, 3.3vw, 34px);
+.cue-cards--card {
+  width: 100vw;
+  min-height: 100vh;
+  min-height: 100svh;
+  margin-left: calc(50% - 50vw);
 }
 
-@media (max-width: 600px) {
-  .cue-cards__sheet {
-    grid-template-columns: 1fr;
-  }
+.cue-cards__single-card {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  min-height: 100svh;
+  padding: 8vw;
+  border-left: 2vw solid #e45b35;
+  background: #fff;
+  font-size: clamp(32px, 10vw, 24vh);
+  font-weight: 800;
+  line-height: 1.08;
+  text-wrap: balance;
+  overflow-wrap: anywhere;
+}
+
+.cue-cards__single-card--long {
+  font-size: clamp(30px, 7vw, 18vh);
 }
 
 @page {
   size: A4 landscape;
-  margin: 10mm;
+  margin: 0;
 }
 
 @media print {
-  #header_wrap,
-  #footer_wrap {
-    display: none;
-  }
-
+  html,
+  body,
+  .main-content,
   #main_content_wrap .inner {
-    max-width: none;
-    padding: 0;
+    width: 297mm;
+    margin: 0;
   }
 
-  .cue-cards__sheet {
-    width: 277mm;
-    height: 190mm;
-    max-width: none;
-    grid-template-rows: repeat(3, minmax(0, 1fr));
-    gap: 5mm;
+  .cue-cards--card {
+    width: 297mm;
     margin: 0;
     print-color-adjust: exact;
     -webkit-print-color-adjust: exact;
   }
 
-  .cue-cards__card {
+  .cue-cards__single-card {
+    width: 297mm;
+    height: 210mm;
     min-height: 0;
     padding: 7mm;
     font-size: 27pt;
   }
 
-  .cue-cards__card--long {
+  .cue-cards__single-card--long {
     font-size: 22pt;
   }
 }
 </style>
 
 {% assign cue_card_data = site.data['organizer-cue-cards'] %}
-<main class="cue-cards" aria-label="{{ cue_card_data[page.language].title | escape }}">
-  <div class="cue-cards__sheet">
-    {% assign language_cards = cue_card_data[page.language].cards %}
-    {% for card in language_cards %}
-      <section class="cue-cards__card{% if card.size == 'long' %} cue-cards__card--long{% endif %}">
-        {{ card.text | escape }}
-      </section>
-    {% endfor %}
-  </div>
-</main>
+{% assign language_cards = cue_card_data[page.language].cards %}
+{% if page.card %}
+  {% assign selected_card = language_cards | where: 'id', page.card | first %}
+  <main class="cue-cards cue-cards--card" aria-label="{{ selected_card.text | escape }}">
+    <article class="cue-cards__single-card{% if selected_card.size == 'long' %} cue-cards__single-card--long{% endif %}">
+      {{ selected_card.text | escape }}
+    </article>
+  </main>
+{% else %}
+  <main class="cue-cards cue-cards--overview" aria-label="{{ cue_card_data[page.language].title | escape }}">
+    <h1>{{ cue_card_data[page.language].title | escape }}</h1>
+    <ul class="cue-cards__list">
+      {% for card in language_cards %}
+        <li>
+          <a class="cue-cards__link" href="{{ '/organizer-cue-cards/' | append: page.language | append: '/' | append: card.id | append: '/' | relative_url }}">
+            {{ card.text | escape }}
+          </a>
+        </li>
+      {% endfor %}
+    </ul>
+  </main>
+{% endif %}

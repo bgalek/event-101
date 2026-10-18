@@ -1,5 +1,4 @@
 
-# Event 101
 The purpose of this document is to provide useful tips for organizing offline and hybrid events for larger audiences.
 It can also serve as a checklist when preparing your own event!
 
@@ -87,11 +86,11 @@ Stage:
   * "speak into the microphone"
   * "halfway through"
   * "no time for audience questions"
-* download and print the [English](organizer-cue-cards.en.html) or [Polish](organizer-cue-cards.pl.html) cue cards
+* open and print individual [English](organizer-cue-cards.en.html) or [Polish](organizer-cue-cards.pl.html) cue cards
  * invite all speakers to sit in the first row
 * provide microphones for speakers, hosts, and audience members (so people can ask questions without the host having to run around)
 
-Add cue card text to `_data/organizer-cue-cards.yml` and set `size: long` for longer messages. To add a language, add its translations there and create a Markdown page with `layout: organizer-cue-cards` and the matching `language` value.
+Add each cue card to `_data/organizer-cue-cards.yml` with a unique `id` and set `size: long` for longer messages. Add a small Markdown page for each card under `organizer-cue-cards/<language>/<id>.md`, with `layout: organizer-cue-cards`, the matching `language` and `card` values, and a permalink ending in `/<id>/`. The language page automatically lists cards from the data file. To add a language, add its translations and create a Markdown overview page with `layout: organizer-cue-cards` and the matching `language` value.
 
 Share the following venue information with participants:
 * where it is
@@ -153,7 +152,7 @@ If possible, give participants the option to go outside for some fresh air durin
 
 ## For speakers
 
-## Software
+### Software
 
 * Turn off notifications
 * If possible, try to run your presentation offline
