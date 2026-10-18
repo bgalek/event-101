@@ -7,7 +7,7 @@ It can work as a checklist when preparing your own event too!
 
 ### Time
 
-Please be aware that not everybody lives in the same timezone, 
+Please be aware that not everybody lives in the same time zone, 
 especialy important when inviting guests for keynotes or talks
 
 ### Communication
@@ -103,23 +103,23 @@ Provide on site:
 
 ### Hardware
 
-* provide slider/clicker
-* have additional cables and converters
-* setup microphones and test sound before the event
+* provide a slider/clicker
+* have additional cables and converters, spare batteries and extension cords
+* set up microphones and test sound before the event
 
 ### Slides rules
 
-Please provide informations to speakers about slides format i.e. resolution, color scheme, 
-sound availability, file format etc.  and how to deliver it to organizers.
+Please provide information to speakers about slide format i.e. resolution, color scheme, 
+sound availability, file format etc. and how to deliver it to organizers.
 
 ### Procurement
 
 Using SAP? 
-Remember to add vendors beforehand before you issue any Purchase Order.
+Remember to add vendors before you issue any Purchase Order.
 
 ### Journalist
 
-* ask or hire somebody to photograp the event, give this person some time to prepare
+* ask or hire somebody to photograph the event; give this person some time to prepare
 * notes, photos and movies from the event are good material for your event history webpage
 
 ### Breaks
@@ -127,8 +127,8 @@ Remember that your audience needs regular breaks - they will be tired and won't 
 The break will also be useful for people actively working at the event.
 
 Short breaks:
-* Provide at least 10 min breaks, so that everyone has time for drink and go to the bathroom.
-* If your event is held in more than one room, attendees must also have time space to move to the room that interests them.
+* Provide at least 10 min breaks, so that everyone has time to drink and go to the bathroom.
+* If your event is held in more than one room, attendees must also have time and space to move to the room that interests them.
 
 Long breaks:
 * Provide at least one long break during the day that can be used for lunch and rest.
@@ -136,8 +136,11 @@ Long breaks:
 If possible, provide participants with the option of going outside to fresh air during breaks.
 
 ### Food & Drinks 
+* Provide at least drinking water.
+* If you want to serve alcoholic beverages, check this with venue owners.
 
 ### Registration
+* Send a reminder before the event; prepare a backup check-in method.
 
 ### Attendances
 
@@ -145,6 +148,6 @@ If possible, provide participants with the option of going outside to fresh air 
 
 ## Software
 
-* turn off notifications
-* if possible, try to run your presentation offline
-* the font is never big enough, make it bigger
+* Turn off notifications
+* If possible, try to run your presentation offline
+* the font is never big enough; make it bigger
